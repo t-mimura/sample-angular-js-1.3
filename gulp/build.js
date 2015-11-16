@@ -9,7 +9,7 @@ var mainBowerFiles = require('main-bower-files');
 
 gulp.task('script', [], function() {
   return gulp.src(path.join(conf.paths.src, 'js/entry.js'))
-    .pipe($.webpack())
+    .pipe($.webpack({output:{filename: 'app.js'}}))
     .pipe(gulp.dest(path.join(conf.paths.dist, '/scripts')));
 });
 
