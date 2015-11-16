@@ -1,0 +1,7 @@
+# output
+.tmp
+dist
+
+# lib, packages
+bower_components
+node_modules
